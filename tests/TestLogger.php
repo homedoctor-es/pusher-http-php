@@ -7,7 +7,7 @@ class TestLogger extends AbstractLogger
     /**
      * {@inheritdoc}
      */
-    public function log($level, $message, array $context = array())
+    public function log($level, $message, array $context = array()): void
     {
         $msg = sprintf('Pusher: %s: %s', strtoupper($level), $message);
         $replacement = array();
